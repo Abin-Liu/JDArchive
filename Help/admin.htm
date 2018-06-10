@@ -1,0 +1,161 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+<link rel="stylesheet" type="text/css" href="Style.css"/>
+</head>
+<html>
+<body><a name="top"></a>
+
+<!-- Master table with 3 rolumns -->
+<table height="100%">
+<tr valign="top">
+<td><!-- Dummy left column --></td>
+
+<!-- Data column with fixed width of 850 -->
+<td bgcolor="#FFFFFF" width="850"> <!-- Data column start -->
+
+<!-- Data table with 4 rows -->
+<table cellspacing="0">
+<!-- 1st row banner image -->
+<tr><td><a href="index.htm"><img border="1" src="images/banner.jpg"></a></td></tr>
+
+<!-- 2nd row title bar -->
+<tr><td id="headerline">★ 管理工具 ★</td></tr>
+
+<!-- 2nd row page contents -->
+<tr><td>
+
+<!-- Contents table with only 1 cell -->
+<table height="100%" cellspacing="16"><tr><td>
+
+<!-- Start your page contents here -->
+
+
+<h2><a name="desc"></a>功能说明</h2>
+
+<p>
+管理工具用以进行资料库的各项日常管理，仅对特定用户群体（部门主管、系统管理员、超级管理员）开放，而对一般用户则处于不可用状态。
+</p>
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<h2><a name="catinit"></a>目录初始化</h2>
+
+<p>
+把一个位于本机上的完整目录结构（包括所有子目录和文件）复制到资料库中，其中包含的所有文件都会自动在资料库中生成一个初始版本，版本号为1.00.0001，并以操作人的名义通过审核。这一功能是为了方便部门主管在资料库使用初期将现有资料文件以批量上传、批量审核的方式快速录入到资料库中，但是由于资料会自动以操作人的名义通过审核，如果因为这些资料而对企业的生产管理产生错误性指导，操作人需要承担责任。因此在上传之前务必对所有文件进行仔细检验。</p>
+
+
+<blockquote>
+	<table id="datatable">
+		<tr>
+			<th>限制条件</th>
+		</tr>
+		<tr>
+			<td>最低权限：部门主管</td>
+		</tr>
+		<tr>
+			<td>部门主管可初始化本部门的目录，系统管理员可初始化任何部门的目录。</td>
+		</tr>
+		<tr>
+			<td>在同一层级中的目录名称不允许重复。</td>
+		</tr>
+	</table>
+</blockquote>
+
+<p> <b>操作方式：</b></p>
+<p>选取将要初始化目录的父目录，点击菜单栏中的“管理”，选取“部门主管→目录初始化”：</p>
+<p><img border="1" src="Images/admin_cat_init.png"></p>
+<p>此操作将调出“目录初始化”界面，在这里选取将要上传的目录，选取结束后按“上传按钮”，如下图所示：</p>
+<p><img border="0" src="Images/admin_cat_select.gif"></p>
+<p>上传操作将把整个“D:\Abin\Desktop\供应商往来单据”目录结构复制到资料库中，如下图所示：</p>
+<p>
+<img border="1" src="Images/admin_cat_init_finish.png"></p>
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<a name="user"></a><h2><a name="paste"></a>用户管理</h2>
+
+<p>添加新用户、更改现有用户的分组、设置用户访问权限、重置用户密码。</p>
+
+
+<blockquote>
+	<table id="datatable">
+		<tr>
+			<th>限制条件</th>
+		</tr>
+		<tr>
+			<td>最低权限：系统管理员</td>
+		</tr>
+		<tr>
+			<td>
+			任何管理员都只能对权限低于自己的用户进行操作，系统管理员只能操作部门主管（含）以下的用户账户，只有超级管理员才能操作系统管理员的账户。</td>
+		</tr>
+		<tr>
+			<td>用户名称不允许重复。</td>
+		</tr>
+		<tr>
+			<td>
+			金都资料库原则上要求用户必须以实名注册，系统管理员必须认真审查每一个新建用户的名称。如确有一名以上同名同姓的员工需要注册，在征求本人意见并取得超级管理员同意后，可酌情选用恰当的化名。</td>
+		</tr>
+		<tr>
+			<td>用户一经创建不允许删除，用户名称不允许修改。</td>
+		</tr>
+	</table>
+</blockquote>
+
+<p> <b>操作方式：</b></p>
+<p>点击菜单栏中的“管理”，选取“系统管理员→用户管理”：</p>
+<p><img border="1" src="Images/admin_user.png"></p>
+<p>此操作将调出用户列表：</p>
+<p><img border="0" src="Images/admin_user_list.gif"></p>
+<p>点击“创建”按钮将调出用户信息界面，在这里填入用户信息后按“提交”按钮即完成创建：</p>
+<p><img border="0" src="Images/admin_user_add.gif"></p>
+<p>修改用户界面和操作过程与创建用户相似。</p>
+<p>重置密码将选定用户的密码清空，重置后必须立即通知用户创建新密码，否则将可能因账户盗用而影响到资料库的数据安全。</p>
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<a name="role"></a><h2></a>组管理</h2>
+
+<p>创建新的用户组（部门）。</p>
+
+<blockquote>
+	<table id="datatable">
+		<tr>
+			<th>限制条件</th>
+		</tr>
+		<tr>
+			<td>最低权限：系统管理员</td>
+		</tr>
+		<tr>
+			<td>组名称不允许重复。</td>
+		</tr>
+		<tr>
+			<td>组一经创建不允许删除，组名称不允许修改。</td>
+		</tr>
+	</table>
+</blockquote>
+
+<p> <b>操作方式：</b></p>
+<p>点击菜单栏中的“管理”，选取“系统管理员→组管理”：</p>
+<p><img border="1" src="Images/admin_role.png"></p>
+<p>此操作将调出用户组管理界面：</p>
+<p><img border="0" src="Images/admin_role_list.gif"></p>
+<p>点击“新建”按钮调出组新增用户组界面，输入新组名称后按“确定”按钮即完成创建：</p>
+<p><img border="0" src="Images/admin_role_add.gif"></p>
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<!-- End of page contents -->
+</td></tr></table><!-- End of contents table -->
+</td></tr><!-- End of and row -->
+
+<!-- 3rd row page footer -->
+<tr><td id="footerline">版权所有(c) 2011 <a href="mailto:abinn32@yahoo.com">Abin</a> - <a href="http://www.jindu-wx.com/">无锡金都机械设备公司</a></td></tr>
+</table>
+
+</td><!-- Data column end -->
+<td><!-- Dummy right column --></td>
+</tr></table> <!-- End of master table -->
+
+</body>
+</html>

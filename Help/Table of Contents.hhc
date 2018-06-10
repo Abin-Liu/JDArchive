@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="Window Styles" value="0x800027">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="客户端使用手册">
+		<param name="Local" value="index.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="软件概述">
+			<param name="Local" value="intro.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="程序简介">
+				<param name="Local" value="intro.htm#desc">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="系统需求">
+				<param name="Local" value="intro.htm#sysreq">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="网络拓扑图">
+				<param name="Local" value="intro.htm#network">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="开始使用">
+			<param name="Local" value="start.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="操作界面与工作区域">
+				<param name="Local" value="start.htm#interface">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="网络设置">
+				<param name="Local" value="start.htm#settings">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="登录资料库">
+				<param name="Local" value="start.htm#login">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="用户权限">
+				<param name="Local" value="start.htm#privilege">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="软件更新">
+				<param name="Local" value="start.htm#update">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="目录操作">
+			<param name="Local" value="categories.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="创建目录">
+				<param name="Local" value="categories.htm#catcreate">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="目录改名">
+				<param name="Local" value="categories.htm#catchange">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="删除目录">
+				<param name="Local" value="categories.htm#catdelete">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="目录共享设置">
+				<param name="Local" value="categories.htm#catprivilege">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="文件操作">
+			<param name="Local" value="files.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="创建文件">
+				<param name="Local" value="files.htm#filecreate">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="删除文件">
+				<param name="Local" value="files.htm#filedelete">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="管理版本号">
+				<param name="Local" value="files.htm#vermanage">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="版本操作">
+			<param name="Local" value="versions.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="概念">
+				<param name="Local" value="versions.htm#verconcept">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="上传版本">
+				<param name="Local" value="versions.htm#verupload">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="下载版本">
+				<param name="Local" value="versions.htm#verdownload">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="审核版本">
+				<param name="Local" value="versions.htm#vercheck">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="反审核版本">
+				<param name="Local" value="versions.htm#veruncheck">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="删除版本">
+				<param name="Local" value="versions.htm#verdelete">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="剪切与粘贴">
+			<param name="Local" value="copypaste.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="功能说明">
+				<param name="Local" value="copypaste.htm#desc">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="剪切">
+				<param name="Local" value="copypaste.htm#cut">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="粘贴">
+				<param name="Local" value="copypaste.htm#paste">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="管理工具">
+			<param name="Local" value="admin.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="功能说明">
+				<param name="Local" value="admin.htm#desc">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="目录初始化">
+				<param name="Local" value="admin.htm#catinit">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="用户管理">
+				<param name="Local" value="admin.htm#user">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="组管理">
+				<param name="Local" value="admin.htm#role">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="版权声明">
+			<param name="Local" value="author.htm">
+			<param name="New" value="1">
+			<param name="ImageNumber" value="3">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

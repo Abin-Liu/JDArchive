@@ -1,0 +1,140 @@
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+<link rel="stylesheet" type="text/css" href="Style.css"/>
+</head>
+<html>
+<body><a name="top"></a>
+
+<!-- Master table with 3 rolumns -->
+<table height="100%">
+<tr valign="top">
+<td><!-- Dummy left column --></td>
+
+<!-- Data column with fixed width of 850 -->
+<td bgcolor="#FFFFFF" width="850"> <!-- Data column start -->
+
+<!-- Data table with 4 rows -->
+<table cellspacing="0">
+<!-- 1st row banner image -->
+<tr><td><a href="index.htm"><img border="1" src="images/banner.jpg"></a></td></tr>
+
+<!-- 2nd row title bar -->
+<tr><td id="headerline">★ 文件操作 ★</td></tr>
+
+<!-- 2nd row page contents -->
+<tr><td>
+
+<!-- Contents table with only 1 cell -->
+<table height="100%" cellspacing="16"><tr><td>
+
+<!-- Start your page contents here -->
+
+
+<a name="filecreate"></a><h2>创建文件</h2>
+<p>创建新文件以供其他用户上传和储存版本资料。 文件只是以文件名的形式作为数据库索引，本身不包含实质性的数据，真正携带数据的是<a href="versions.htm">版本</a>，关于<a href="versions.htm#verconcept">文件和版本</a>之间的概念关系和区别，后文将会有详细介绍。</p>
+<blockquote>
+	<table id="datatable">
+		<tr>
+			<th>限制条件</th>
+		</tr>
+		<tr>
+			<td>最低权限：高级用户</td>
+		</tr>
+		<tr>
+			<td>高级用户可在本部门目录中创建文件，系统管理员可在任何部门目录中创建文件。</td>
+		</tr>
+		<tr>
+			<td>部门根目录中不允许直接创建文件。</td>
+		</tr>
+		<tr>
+			<td>同一目录中，各文件的名称不允许重复，而不同目录中的文件在命名上无此限制。</td>
+		</tr>
+		<tr>
+			<td>部门主管以上权限的用户才允许上传可执行文件。</td>
+		</tr>
+		<tr>
+			<td>文件一经创建，其名称终身不可更改。</td>
+		</tr>
+	</table>
+</blockquote>
+
+<p><b>操作方式：</b></p>
+<p>点击客户端软件主界面的“创建文件”按钮：</p>
+<p><img border="1" src="Images/file_add.png"></p>
+<p>此操作将调出“文件信息”界面，你可在此选择将要创建的文件并输入文件简介，输入完成后点击“提交”按钮即完成创建。如下图所示：</p>
+<p><img border="0" src="Images/file_info.gif"></p>
+<p>新文件在创建完成后会立即触发<a href="versions.htm#verupload">版本上传</a>界面，要求你为这个文件上传首个版本，由于后续步骤所涉及的内容均属于<a href="versions.htm">版本操作</a>范畴，后文将有详细介绍，此处暂时略过。</p>
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<a name="filedelete"></a><h2>删除文件</h2>
+<p>删除一个空文件。</p>
+<blockquote>
+	<table id="datatable">
+		<tr>
+			<th>限制条件</th>
+		</tr>
+		<tr>
+			<td>最低权限：部门主管</td>
+		</tr>
+		<tr>
+			<td>只有空文件（不包含任何版本数据）才允许被删除。</td>
+		</tr>
+		<tr>
+			<td>部门主管可删除本部门目录中的文件，系统管理员可删除任何部门目录中的文件。</td>
+		</tr>
+		<tr>
+			<td>被删除的空文件无法通过任何方式恢复。</td>
+		</tr>
+	</table>
+</blockquote>
+<p><b>操作方式：</b></p>
+<p>在要删除的空文件上点击鼠标右键，在弹出菜单中选取“删除文件”：</p>
+<p><img border="1" src="Images/file_del.png"></p>
+<p>由于空文件的删除不会导致任何潜在的数据损失，所以此操作不触发确认对话框，删除操作经服务器安全控制系统核实无误后立即完成。</p>
+
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<a name="vermanage"></a><h2>管理版本号</h2>
+<p>管理选定文件的版本号，通常用以对某个发生过巨大修改的文件进行主副版本号提升。一般情况下资料的版本号由资料库统一管理，每次版本更新会自动将版本号进行递增。在某些特定情况下，例如某个文件内容发生了巨大修改，部门主管可以对主/副版本号进行直接提升，规定这个文件的所有后续版本的起始值。</p>
+<blockquote>
+	<table id="datatable">
+		<tr>
+			<th>限制条件</th>
+		</tr>
+		<tr>
+			<td>最低权限：部门主管</td>
+		</tr>
+		<tr>
+			<td>部门主管可管理本部门资料的版本号，系统管理员可管理任何部门资料的版本号。</td>
+		</tr>
+		<tr>
+			<td>资料库不允许版本号倒退，任何后续版本不得低于现有版本号。</td>
+		</tr>
+	</table>
+</blockquote>
+
+<p><b>操作方式：</b></p>
+<p>在要提升版本号的文件上点击鼠标右键，在弹出菜单中选取“管理版本号”：</p>
+<p><img border="1" src="Images/file_managever.png"></p>
+<p>此操作将触发版本号管理界面，用户可在此输入提升后的主/副版本号，完成后点击“提交”按钮。今后这个文件的任何后续版本都将从新版本号开始递增，如下图所示：</p>
+<p><img border="0" src="Images/file_manageverdlg.gif"></p>
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<!-- End of page contents -->
+</td></tr></table><!-- End of contents table -->
+</td></tr><!-- End of and row -->
+
+<!-- 3rd row page footer -->
+<tr><td id="footerline">版权所有(c) 2011 <a href="mailto:abinn32@yahoo.com">Abin</a> - <a href="http://www.jindu-wx.com/">无锡金都机械设备公司</a></td></tr>
+</table>
+
+</td><!-- Data column end -->
+<td><!-- Dummy right column --></td>
+</tr></table> <!-- End of master table -->
+
+</body>
+</html>

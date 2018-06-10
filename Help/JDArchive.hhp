@@ -1,0 +1,23 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=..\JDArchive.chm
+Contents file=Table of Contents.hhc
+Default topic=intro.htm
+Display compile progress=No
+Language=0x804 Chinese (PRC)
+Title=金都资料库客户端使用手册
+
+
+[FILES]
+versions.htm
+admin.htm
+author.htm
+categories.htm
+copypaste.htm
+files.htm
+intro.htm
+start.htm
+index.htm
+
+[INFOTYPES]
+

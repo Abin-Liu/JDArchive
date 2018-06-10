@@ -1,0 +1,230 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\JDArchiveSvrCfg.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\JDArchiveSvrCfg.ico"
+IDI_LOG                 ICON    DISCARDABLE     "res\\log.ico"
+IDI_START               ICON    DISCARDABLE     "res\\start.ico"
+IDI_STOP                ICON    DISCARDABLE     "res\\stop.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_JDARCHIVESVRCFG_DIALOG DIALOGEX 0, 0, 292, 283
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "金都资料库服务器设置"
+CLASS "JDArchiveSvrCfg"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "服务器",IDC_STATIC,7,7,278,62
+    LTEXT           "最大连接数：",IDC_STATIC,20,22,49,8
+    EDITTEXT        IDC_MAXCONN,80,19,55,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "文件根目录：",IDC_STATIC,20,38,49,8
+    PUSHBUTTON      "文件根目录",IDC_ROOTPATH,80,35,194,14
+    CONTROL         "启用调试模式（将产生运行LOG）",IDC_DEBUG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,20,53,132,10
+    GROUPBOX        "数据库",IDC_STATIC,7,77,278,83
+    LTEXT           "主机地址：",IDC_STATIC,20,92,41,8
+    EDITTEXT        IDC_HOST,80,89,134,14,ES_AUTOHSCROLL
+    LTEXT           "数据库名称：",IDC_STATIC,20,108,49,8
+    EDITTEXT        IDC_DBNAME,80,105,134,14,ES_AUTOHSCROLL
+    LTEXT           "登录名：",IDC_STATIC,20,124,33,8
+    EDITTEXT        IDC_USERNAME,80,121,134,14,ES_AUTOHSCROLL
+    LTEXT           "密码：",IDC_STATIC,20,140,25,8
+    EDITTEXT        IDC_PASSWORD,80,137,134,14,ES_PASSWORD | ES_AUTOHSCROLL
+    GROUPBOX        "计划备份",IDC_STATIC,7,169,278,85
+    LTEXT           "备份根目录：",IDC_STATIC,20,186,49,8
+    PUSHBUTTON      "备份根目录",IDC_BACKUPPATH,80,183,194,14
+    LTEXT           "备份间隔：",IDC_STATIC,20,203,41,8
+    EDITTEXT        IDC_INTERVAL,80,200,40,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "天，运行于：",IDC_STATIC,126,203,49,8
+    EDITTEXT        IDC_HOUR,180,200,40,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "点钟",IDC_STATIC,225,203,24,8
+    CONTROL         "完成后删除",IDC_AUTODEL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,219,56,10
+    EDITTEXT        IDC_DELDAYS,80,217,40,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "天以前的备份数据",IDC_STATIC,126,220,65,8
+    CONTROL         "本次启动服务后立即备份",IDC_BACKUPNOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,20,235,104,10
+    PUSHBUTTON      "保存",IDOK,62,262,64,14
+    PUSHBUTTON      "关闭",IDCANCEL,164,262,64,14
+END
+
+IDD_BUSYDLG DIALOG DISCARDABLE  0, 0, 210, 42
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 9, "宋体"
+BEGIN
+    CTEXT           "Static",IDC_TEXT,7,7,196,28,SS_CENTERIMAGE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "金都资料库服务器配置程序\0"
+            VALUE "CompanyName", "无锡金都机械设备公司\0"
+            VALUE "FileDescription", "金都资料库服务器-参数设置界面\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "JDArchiveSvrCfg\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2011\0"
+            VALUE "LegalTrademarks", "Abin\0"
+            VALUE "OriginalFilename", "JDArchiveSvrCfg.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "JDArchiveSvrCfg 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_JDARCHIVESVRCFG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 285
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 276
+    END
+
+    IDD_BUSYDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 35
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\JDArchiveSvrCfg.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

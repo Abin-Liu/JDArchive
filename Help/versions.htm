@@ -1,0 +1,226 @@
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+<link rel="stylesheet" type="text/css" href="Style.css"/>
+</head>
+<html>
+<body><a name="top"></a>
+
+<!-- Master table with 3 rolumns -->
+<table height="100%">
+<tr valign="top">
+<td><!-- Dummy left column --></td>
+
+<!-- Data column with fixed width of 850 -->
+<td bgcolor="#FFFFFF" width="850"> <!-- Data column start -->
+
+<!-- Data table with 4 rows -->
+<table cellspacing="0">
+<!-- 1st row banner image -->
+<tr><td><a href="index.htm"><img border="1" src="images/banner.jpg"></a></td></tr>
+
+<!-- 2nd row title bar -->
+<tr><td id="headerline">★ 文件与版本 ★</td></tr>
+
+<!-- 2nd row page contents -->
+<tr><td>
+
+<!-- Contents table with only 1 cell -->
+<table height="100%" cellspacing="16"><tr><td>
+
+<!-- Start your page contents here -->
+
+
+<a name="verconcept"></a><h2>概念</h2>
+<p>在金都资料库的数据定义中，<a href="files.htm">文件</a>是指数据库中的名称索引，它本身不包含任何实质性数据，这一点与我们通常理解的操作系统中的文件概念是不同的，真正携带数据的是“版本”。一个文件可以包含多个版本（最多255,000,000个），每个版本都是一个通俗概念中的“文件”，也就是我们将要上传和下载的数据。多个版本在同一文件的名义下通过服务器索引数据库管理共存，用户可以自由选择下载哪个历史版本。</p>
+
+<p>对于上传者而言，某个版本一旦上传成功，自己本机上的文件就完全可以删除了，因为对于企业内的任何用户，只有资料库提供的文件数据才是权威的、合法的，而原作者本机上的文件即使内容和资料库中的完全一致，但是从管理规程上来讲是不具备合法性的。如果上传者日后需要进行更新，也必须从资料库下载、修改后重新上传生成新版本，经本部门主管审核后才能生效。</p>
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<a name="verupload"></a><h2>上传版本</h2>
+
+<p>为指定的文件上传一个新版本。新版本并不会覆盖旧版本，而是以新旧共存的方式由资料库服务器进行统一管理和提供版本追溯。</p>
+<blockquote>
+	<table id="datatable">
+		<tr>
+			<th>限制条件</th>
+		</tr>
+		<tr>
+			<td>最低权限：高级用户</td>
+		</tr>
+		<tr>
+			<td>高级用户只能向本部门的文件上传版本，系统管理员可向任何部门的文件上传版本。</td>
+		</tr>
+		<tr>
+			<td>金都资料库允许上传的版本最大长度为4,294,967,295字节，合4.0GB。</td>
+		</tr>
+		<tr>
+			<td>资料库不允许版本号倒退。</td>
+		</tr>
+		<tr>
+			<td>主版本号递增范围为1-255，副版本号递增范围为0-99。</td>
+		</tr>
+		<tr>
+			<td>版本一经上传，其版本号终身不可更改。</td>
+		</tr>
+	</table>
+</blockquote>
+
+<p><b>操作方式：</b></p>
+<p>在要上传版本的文件上点击鼠标右键，在弹出菜单中选取“上传版本”：</p>
+<p><img border="1" src="Images/ver_upload.png"></p>
+
+<p>此操作将调出“上传版本数据”界面，你可在此选择将要上传的文件、输入版本说明，输入完成后点击“上传”按钮。
+如果版本文件较大，上传过程中会出现进度显示框，在进度结束之前可随时通过点击“取消”按钮来取消上传。如下图所示：</p>
+
+<p><img border="0" src="Images/ver_info.gif">
+<img border="0" src="Images/ver_upload_progress.gif"></p>
+
+<p>版本上传结束后，新版本会出现在客户端软件右方版本显示区域，其中包含版本代码、归档人（上传人）、归档日期等信息，如下图所示：</p>
+<p><img border="1" src="Images/ver_upload_finish.png"></p>
+
+<p>由于此版本尚未通过部门主管审核，因此只有上传者本人或部门主管权限以上的用户才能访问，而对于其他用户，这个版本在通过审核之前是不可见的。</p>
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<a name="verdownload"></a><h2>下载版本</h2>
+
+<p>从资料库中下载一个文件的版本。</p>
+
+<blockquote>
+	<table id="datatable">
+		<tr>
+			<th>限制条件</th>
+		</tr>
+		<tr>
+			<td>最低权限：普通用户</td>
+		</tr>
+		<tr>
+			<td>普通用户和高级用户可下载已<a href="#vercheck">审核</a>的版本，上传者本人和部门主管可下载未审核的版本。</td>
+		</tr>
+	</table>
+</blockquote>
+
+<p><b>操作方式：</b></p>
+
+<p>在要下载的版本上点击鼠标右键，在弹出菜单中选取“下载版本”。经服务器安全控制系统核实无误后下载立即开始，如果版本文件较大，下载过程中会出现进度显示框，在进度结束之前可随时通过点击“取消”按钮来取消下载。如下图所示：</p>
+
+<p><img border="1" src="Images/ver_download.png"></p>
+<p>
+<img border="0" src="Images/ver_download_progress.gif"></p>
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<a name="vercheck"></a><h2>审核版本</h2>
+
+<p>审核一个新上传的版本，使它在资料库中正式生效。</p>
+
+<blockquote>
+	<table id="datatable">
+		<tr>
+			<th>限制条件</th>
+		</tr>
+		<tr>
+			<td>最低权限：部门主管</td>
+		</tr>
+		<tr>
+			<td>部门主管可审核本部门上传的版本，系统管理员可审核任何部门上传的版本。</td>
+		</tr>
+		<tr>
+			<td>版本审核具有严肃性，审核前必须进行实质性严格检查。</td>
+		</tr>
+		<tr>
+			<td>版本一经审核，审核人和审核日期将作为版本基本信息显示在列表中，除非进行<a href="#veruncheck">反审核</a>，否则审核人信息不可更改。</td>
+		</tr>
+	</table>
+</blockquote>
+
+<p><b>操作方式：</b></p>
+
+<p>在要审核的版本上点击鼠标右键，在弹出菜单中选取“审核版本”，如下图所示：</p>
+
+<p><img border="1" src="Images/ver_check.png"></p>
+
+<p>版本审核经服务器安全控制系统核实无误后立即生效，审核人会作为版本信息显示在列表中：</p>
+<p><img border="1" src="Images/ver_check_finish.png"></p>
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<a name="veruncheck"></a><h2>反审核版本</h2>
+
+<p>反审核一个已经<a href="#vercheck">审核</a>过的版本，使它从资料库中暂时失效。</p>
+
+<blockquote>
+	<table id="datatable">
+		<tr>
+			<th>限制条件</th>
+		</tr>
+		<tr>
+			<td>最低权限：部门主管</td>
+		</tr>
+		<tr>
+			<td>部门主管可反审核本部门上传的版本，系统管理员可反审核任何部门上传的版本。</td>
+		</tr>
+		<tr>
+			<td>版本一经反审核，部门主管以下权限的用户（原上传人除外）将无法下载和访问这一版本。</td>
+		</tr>
+	</table>
+</blockquote>
+
+<p><b>操作方式：</b></p>
+
+<p>在要反审核的版本上点击鼠标右键，在弹出菜单中选取“反审核版本”，如下图所示：</p>
+
+<p><img border="1" src="Images/ver_uncheck.png"></p>
+<p>版本被反审核后，原审核人信息将从列表中消失。</p>
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<a name="verdelete"></a><h2>删除版本</h2>
+
+<p>删除一个未审核的版本，使它从资料库中隐藏，如果不申请恢复，一年以后该版本数据将被彻底删除。</p>
+
+<blockquote>
+	<table id="datatable">
+		<tr>
+			<th>限制条件</th>
+		</tr>
+		<tr>
+			<td>最低权限：部门主管</td>
+		</tr>
+		<tr>
+			<td>只有未审核的版本才允许删除，已审核的版本必须先进行反审核后才能删除。</td>
+		</tr>
+		<tr>
+			<td>部门主管可删除本部门上传的版本，系统管理员可删除任何部门上传的版本。</td>
+		</tr>
+	</table>
+</blockquote>
+
+<p><b>操作方式：</b></p>
+
+<p>在要删除的版本上点击鼠标右键，在弹出菜单中选取“删除版本”，如下图所示：</p>
+
+<p><img border="1" src="Images/ver_del.png"></p>
+
+<p>版本删除属于重大操作，在执行前会触发确认对话框，点击“确定”按钮提交删除请求，经服务器安全控制系统核实无误后操作被执行，并弹出数据恢复方法提示：</p>
+<p><img border="0" src="Images/ver_del_confirm.gif"> </p>
+<p><img border="0" src="Images/ver_del_finish.gif"></p>
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<!-- End of page contents -->
+</td></tr></table><!-- End of contents table -->
+</td></tr><!-- End of and row -->
+
+<!-- 3rd row page footer -->
+<tr><td id="footerline">版权所有(c) 2011 <a href="mailto:abinn32@yahoo.com">Abin</a> - <a href="http://www.jindu-wx.com/">无锡金都机械设备公司</a></td></tr>
+</table>
+
+</td><!-- Data column end -->
+<td><!-- Dummy right column --></td>
+</tr></table> <!-- End of master table -->
+
+</body>
+</html>

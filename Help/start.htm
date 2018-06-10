@@ -1,0 +1,140 @@
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+<link rel="stylesheet" type="text/css" href="Style.css"/>
+</head>
+<html>
+<body><a name="top"></a>
+
+<!-- Master table with 3 rolumns -->
+<table height="100%">
+<tr valign="top">
+<td><!-- Dummy left column --></td>
+
+<!-- Data column with fixed width of 850 -->
+<td bgcolor="#FFFFFF" width="850"> <!-- Data column start -->
+
+<!-- Data table with 4 rows -->
+<table cellspacing="0">
+<!-- 1st row banner image -->
+<tr><td><a href="index.htm"><img border="1" src="images/banner.jpg"></a></td></tr>
+
+<!-- 2nd row title bar -->
+<tr><td id="headerline">★ 开始使用 ★</td></tr>
+
+<!-- 2nd row page contents -->
+<tr><td>
+
+<!-- Contents table with only 1 cell -->
+<table height="100%" cellspacing="16"><tr><td>
+
+<!-- Start your page contents here -->
+
+
+<a name="interface"></a><h2>操作界面与工作区域</h2>
+<p>金都资料库客户端软件主操作界面如下图所示：</p>
+<p><img border="0" src="Images/gui.png"></p>
+
+<p>其中顶部为<font color="#FFFFFF"><span style="background-color: #316AC5"> 菜单栏 </span>
+</font>，用户可通过选取各个菜单中的项目来完成所有操作。菜单栏下方为<font color="#FFFFFF"><span style="background-color: #316AC5"> 快捷工具栏 </span></font>，其中排列着用户通常会频繁进行的操作，快捷工具栏中所有的项目都能在菜单栏中找到，但操作方式比使用菜单更方便、更直观。</p>
+
+<p>菜单栏下方为工作区域，分左右两部分，左边是<font color="#FFFFFF"><span style="background-color: #316AC5"> 目录和文件区 </span></font>，用以显示和操作资料库中的目录和文件；右边是<font color="#FFFFFF"><span style="background-color: #316AC5"> 版本区 </span></font>，用以显示和操作资料库中的各个文件版本数据。两大区域中间的分隔栏可使用鼠标拖拽移动，移动后的位置将被系统记忆并在下次运行时自动调整到用户偏爱的位置上。</p>
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<a name="settings"></a><h2>网络设置</h2>
+<p> 金都资料库属于网络应用程序，需要和局域网服务器进行通讯，所以在第一次使用之前需要进行简单的设置，即设定服务器在网络中的IP地址。目前金都资料库服务器的IP地址固定为<font color="#FFFFFF"><span style="background-color: #000000">192.168.1.2</span></font>，你需要把这个地址提供给你的客户端。如果这是你第一次在这台计算机上运行金都资料库客户端，请选取菜单栏中的“客户端→服务器地址”，在弹出的对话框中输入“192.168.1.2”（注意其中的3个“.”必须是英文半角字符，请关闭中文输入法），然后点击“确定”按钮。如下图所示：</p>
+<p><img border="1" src="Images/server_config.png"></p>
+<p><img border="0" src="Images/server_ip.gif"></p>
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<a name="login"></a><h2>登录资料库</h2>
+
+<p>服务器地址设置无误后，即可进行登录操作，在此之前请确认系统管理员已经为你创建了一个用户账号，详情请与负责你部门的系统管理员洽谈。</p>
+<p>任何用户在获得资料库访问权限前都必须通过客户端进行登录，操作方式为
+点击快捷工具栏中的“登录”按钮，在弹出的“用户登录”对话框中输入你的用户名和密码，输入完成后点击“登录”按钮进行登录。如下图所示：</p>
+<p><img border="1" src="Images/login_button.png">&nbsp;
+<img border="0" src="Images/login.png"></p>
+
+<p>注意，金都资料库在核查用户登录信息时对用户名和密码都是严格区分大小写的，假如你的密码是“abc”，而登录时如果输入密码“ABC”会导致登录失败。如果你忘记了自己的登录密码，请通知系统管理员进行密码重置，重置后密码会被清空，请在第一时间设定新密码，否则可能导致你的权限被他人恶意盗用而影响到资料库的数据安全。</p>
+
+<p>在资料访问结束后，请点击“退出登录”按钮从服务器断开，退出登录能降低服务器的运行负担并提高资料库数据的安全性，<font color="#FFFFFF"><span style="background-color: #316AC5">请养成及时退出登录的好习惯</span></font>。</p>
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<a name="privilege"></a><h2>用户权限</h2>
+<p>金都资料库的用户分为若干个等级，相对应的操作和资料访问权限如下表所示。高等级用户享有低等级用户的一切权限，表格中仅列出每一级用户比下一级所享有的额外权限：</p>
+
+<blockquote>
+	<table id="datatable">
+		<tr>
+			<th width="116">用户级别</th>
+			<th>权限说明</th>
+			<th>指派方式</th>
+		</tr>
+		<tr>
+			<td>超级管理员</td>
+			<td>可指派系统管理员，重置系统管理员密码，直接访问数据库，永久删除数据资料，恢复被其他用户所删除的资料。</td>
+			<td>企业负责人直接指派。</td>
+		</tr>
+		<tr>
+			<td>系统管理员</td>
+			<td>可创建新部门，创建新用户，指派用户权限（低于系统管理员），重置用户密码（低于系统管理员）。</td>
+			<td>由超级管理员指派。</td>
+		</tr>
+		<tr>
+			<td>部门主管</td>
+			<td>可在本部门根目录中创建和删除子目录，设置子目录的外部门共享范围，审核、反审核文件版本，删除<sup><font  color="#FF0000">①</font></sup>文件版本资料。</td>
+			<td>由系统管理员指派。</td>
+		</tr>
+		<tr>
+			<td>高级用户</td>
+			<td>可在权限范围内创建文件和上传、更新<sup><font color="#FF0000">②</font></sup>版本资料。</td>
+			<td>由系统管理员指派。</td>
+		</tr>
+		<tr>
+			<td>普通用户</td>
+			<td>可在权限范围内浏览文件和下载已审核的版本资料。</td>
+			<td>由系统管理员指派。</td>
+		</tr>
+		<tr>
+			<td>已禁用</td>
+			<td>无权访问资料库。</td>
+			<td>由系统管理员指派。</td>
+		</tr>
+	</table>
+</blockquote>
+
+<p>注释：</p>
+<ol>
+	<li>
+	由部门主管所<font color="#FF0000">删除</font>的资料文件只是从资料库中隐藏，并维持隐藏状态一年，一年之后才会真正从服务器磁盘上被删除。在一年之内可随时由超级管理员对被删除的资料进行反删除并重新恢复到资料库中。
+	<li>资料库文件的版本<font color="#FF0000">更新</font>采用可追溯系统，所有更新的版本并不会替换或覆盖旧版本，而是采用新旧版本共存的形式永久存在于资料库中，直到被部门主管或管理员所删除。资料库会为同一文件的各个版本加上递增的历史版本号，记录所有版本的创建人、创建时间、审核人和审核时间，以方便用户进行查询和区分。
+</ol>
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<a name="update"></a><h2>软件更新</h2>
+
+<p> 金都资料库客户端软件使用的是自动更新模式，在每次登录成功时会自动检查是否有可用的更新补丁，如果检测到你所使用的版本已经过期，系统会弹出一个对话框通知你进行软件更新，如下图所示：</p>
+<p><img border="0" src="Images/update.gif">&nbsp; </p>
+
+<p>点击“立即更新”按钮来进行软件更新。请尽可能保持你的客户端软件为最新版本状态，因为作者发布的每一次更新都会修复一个或多个已知的缺陷，或者能提升软件的运行稳定性和安全性，没有理由拒绝进行软件更新。</p>
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<!-- End of page contents -->
+</td></tr></table><!-- End of contents table -->
+</td></tr><!-- End of and row -->
+
+<!-- 3rd row page footer -->
+<tr><td id="footerline">版权所有(c) 2011 <a href="mailto:abinn32@yahoo.com">Abin</a> - <a href="http://www.jindu-wx.com/">无锡金都机械设备公司</a></td></tr>
+</table>
+
+</td><!-- Data column end -->
+<td><!-- Dummy right column --></td>
+</tr></table> <!-- End of master table -->
+
+</body>
+</html>

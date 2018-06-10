@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{01CB269F-C018-4C15-9D8A-D483406E6E8C} = s 'JDArchiveSvr'
+		'JDArchiveSvr.EXE'
+		{
+			val AppID = s {01CB269F-C018-4C15-9D8A-D483406E6E8C}
+		}
+	}
+}

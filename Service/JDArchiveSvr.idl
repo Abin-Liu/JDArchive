@@ -1,0 +1,20 @@
+// JDArchiveSvr.idl : IDL source for JDArchiveSvr.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (JDArchiveSvr.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(A11D80C9-8DE0-4A0B-B10E-2F1C70F8561C),
+	version(1.0),
+	helpstring("JDArchiveSvr 1.0 Type Library")
+]
+library JDARCHIVESVRLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+};

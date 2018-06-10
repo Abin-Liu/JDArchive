@@ -1,0 +1,124 @@
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+<link rel="stylesheet" type="text/css" href="Style.css"/>
+</head>
+<html>
+<body><a name="top"></a>
+
+<!-- Master table with 3 rolumns -->
+<table height="100%">
+<tr valign="top">
+<td><!-- Dummy left column --></td>
+
+<!-- Data column with fixed width of 850 -->
+<td bgcolor="#FFFFFF" width="850"> <!-- Data column start -->
+
+<!-- Data table with 4 rows -->
+<table cellspacing="0">
+<!-- 1st row banner image -->
+<tr><td><a href="index.htm"><img border="1" src="images/banner.jpg"></a></td></tr>
+
+<!-- 2nd row title bar -->
+<tr><td id="headerline">★ 软件概述 ★</td></tr>
+
+<!-- 2nd row page contents -->
+<tr><td>
+
+<!-- Contents table with only 1 cell -->
+<table height="100%" cellspacing="16"><tr><td>
+
+<!-- Start your page contents here -->
+
+
+<a name="desc"></a><h2>程序简介</h2>
+<p>
+金都资料库是一个由数据库、服务器端软件和客户端软件构成的企业级局域网应用程序，其主要功能为储存和管理由局域网内各客户端上传的企业资料文件，并根据各个用户不同的<a href="start.htm#login">登录</a>身份赋予相应的<a href="start.htm#privilege">访问权限</a>。对所有资料的查阅、更新和删除操作进行统一管理，确保资料的唯一性、安全性、权威性，以及文件版本的可追溯性。</p>
+<p>金都资料库的最终实施目的是使企业的基础资料管理由员工个体维护模式转入集中式规范化管理模式，从根本上杜绝因重要文件丢失或技术图纸版本混乱而对企业的生产管理造成损失。</p>
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<a name="sysreq"></a><h2>系统需求</h2>
+<blockquote>
+	<table id="datatable">
+		<tr>
+			<th>项目</th>
+			<th>需求</th>
+		</tr>
+		<tr>
+			<td>操作系统</td>
+			<td>Microsoft<sup><font size="3">&#174;</font></sup> Windows<sup><font size="2">TM</font></sup> 2000</font> 或更高版本的32位操作系统</td>
+		</tr>
+		<tr>
+			<td>硬件配置</td>
+			<td>Windows<sup><font size="2">TM</font></sup> 兼容鼠标、网络适配器</td>
+		</tr>
+		<tr>
+			<td>网络环境</td>
+			<td>企业局域网</td>
+		</tr>
+		<tr>
+			<td>通讯协议</td>
+			<td>TCP/IP</td>
+		</tr>
+	</table>
+</blockquote>
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<a name="network"></a><h2>网络拓扑图</h2></font>
+
+<p>金都资料库系统在结构上属于典型的一对多可扩充式服务器-客户端多线程通讯模型，整体架构由位于局域网服务器上的索引数据库、文件服务器
+、服务器端后台安全控制系统、服务器端用户界面、以及分布于局域网内的多个客户端软件组成，各部分的相互关系如下图所示。</p>
+
+<blockquote><img border="1" src="images/network.jpg"></blockquote>
+
+<blockquote>
+	<table id="datatable">
+		<tr>
+			<th>组件</th>
+			<th>功能</th>
+		</tr>
+		<tr>
+			<td>客户端</td>
+			<td>最终用户界面，根据用户操作生成相应的访问请求并提交给服务器端软件。</td>
+		</tr>
+		<tr>
+			<td>服务器端软件</td>
+			<td>客户端与安全控制系统之间的桥梁，负责接受和转发来自双方的请求与答复数据。</td>
+		</tr>
+		<tr>
+			<td>安全控制系统</td>
+			<td>控制用户登录与权限甄别，保障资料不遭受非法访问。</td>
+		</tr>
+		<tr>
+			<td>索引数据库</td>
+			<td>提供文件数据索引和版本追溯服务。</td>
+		</tr>
+		<tr>
+			<td>文件服务器</td>
+			<td>以加密压缩的方式存储文件实体数据。</td>
+		</tr>
+	</table>
+</blockquote>
+
+<p>以上各部分功能相互协作，构成一套完整可靠的数据通讯链。在客户端和服务器之间进行交换的每一个数据包都必须通过CRC32校验，而传输的
+版本资料在被存储到磁盘之前还必须通过MD5校验，这些数据校验会在一定程度上减慢文件资料的上传和下载速度，但却确保了资料库中所有文件的零误差率。</p>
+
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<!-- End of page contents -->
+</td></tr></table><!-- End of contents table -->
+</td></tr><!-- End of and row -->
+
+<!-- 3rd row page footer -->
+<tr><td id="footerline">版权所有(c) 2011 <a href="mailto:abinn32@yahoo.com">Abin</a> - <a href="http://www.jindu-wx.com/">无锡金都机械设备公司</a></td></tr>
+</table>
+
+</td><!-- Data column end -->
+<td><!-- Dummy right column --></td>
+</tr></table> <!-- End of master table -->
+
+</body>
+</html>

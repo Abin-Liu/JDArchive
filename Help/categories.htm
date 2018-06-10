@@ -1,0 +1,171 @@
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+<link rel="stylesheet" type="text/css" href="Style.css"/>
+</head>
+<html>
+<body><a name="top"></a>
+
+<!-- Master table with 3 rolumns -->
+<table height="100%">
+<tr valign="top">
+<td><!-- Dummy left column --></td>
+
+<!-- Data column with fixed width of 850 -->
+<td bgcolor="#FFFFFF" width="850"> <!-- Data column start -->
+
+<!-- Data table with 4 rows -->
+<table cellspacing="0">
+<!-- 1st row banner image -->
+<tr><td><a href="index.htm"><img border="1" src="images/banner.jpg"></a></td></tr>
+
+<!-- 2nd row title bar -->
+<tr><td id="headerline">★ 目录操作 ★</td></tr>
+
+<!-- 2nd row page contents -->
+<tr><td>
+
+<!-- Contents table with only 1 cell -->
+<table height="100%" cellspacing="16"><tr><td>
+
+<!-- Start your page contents here -->
+
+<a name="catcreate"></a><h2>创建目录</h2>
+<p>创建新目录以供其他用户上传和储存文件资料。</p>
+
+<blockquote>
+	<table id="datatable">
+		<tr>
+			<th>限制条件</th>
+		</tr>
+		<tr>
+			<td>最低权限：部门主管</td>
+		</tr>
+		<tr>
+			<td>部门主管可在本部门目录中创建目录，系统管理员可在任何部门目录中创建目录。</td>
+		</tr>
+		<tr>
+			<td>同一层级下，各目录的名称不允许重复，而不同层级的目录在命名上无此限制。</td>
+		</tr>
+	</table>
+</blockquote>
+
+<p> <b>操作方式：</b></p>
+<p>点击客户端软件主界面的“创建目录”按钮：</p>
+
+<p><img border="1" src="Images/cat_add.png"></p>
+
+<p>此操作将调出“目录信息”界面，你可在此输入将要新建的目录名称和目录简介，输入完成后点击“提交”按钮即完成创建。如下图所示：</p>
+
+<p><img border="0" src="Images/cat_info.gif"></p>
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<p><a name="catchange"></a><h2>目录改名</h2>
+<p>更改现有目录的名称和简介。</p>
+
+<blockquote>
+	<table id="datatable">
+		<tr>
+			<th>限制条件</th>
+		</tr>
+		<tr>
+			<td>最低权限：部门主管</td>
+		</tr>
+		<tr>
+			<td>部门主管可更改本部门目录，系统管理员可更改任何部门目录。</td>
+		</tr>
+		<tr>
+			<td>部门根目录的名称不允许更改。</td>
+		</tr>
+		<tr>
+			<td>同一层级下，各目录的名称不允许重复，而不同层级的目录在命名上无此限制。</td>
+		</tr>
+	</table>
+</blockquote>
+<p> <b>操作方式：</b></p>
+<p>在要改名的目录上点击鼠标右键，在弹出菜单中选取“更改名称”：</p>
+<p><img border="1" src="Images/cat_rename.png"></p>
+<p>此操作将调出“目录信息”界面，你可在此输入目录的新名称和新简介，输入完成后点击“提交”按钮后即完成创建。此界面操作过程与创建目录相同。</p>
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<a name="catdelete"></a><h2>删除目录</h2>
+
+<p>删除一个空目录。</p>
+<blockquote>
+	<table id="datatable">
+		<tr>
+			<th>限制条件</th>
+		</tr>
+		<tr>
+			<td>最低权限：部门主管</td>
+		</tr>
+		<tr>
+			<td>只有空目录（不包含任何文件或下属子目录）才允许被删除。</td>
+		</tr>
+		<tr>
+			<td>部门主管可删除本部门目录，系统管理员可删除任何部门目录。</td>
+		</tr>
+		<tr>
+			<td>被删除的目录无法通过任何方式恢复。</td>
+		</tr>
+	</table>
+</blockquote>
+<p> <b>操作方式：</b></p>
+<p>在要删除的目录上点击鼠标右键，在弹出菜单中选取“删除目录”：</p>
+<p><img border="1" src="Images/cat_del.png"></p>
+<p>由于空目录的删除不会导致任何潜在的数据损失，所以此操作不触发确认对话框，删除操作经服务器安全控制系统核实无误后立即完成。</p>
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<a name="catprivilege"></a><h2>目录共享设置</h2>
+<p>设置某个目录对其它部门的共享方式，默认状态下任何部门的下属子目录都只对本部门用户开放，通过目录权限的设置可以指定某个目录额外允许哪些外部门访问。</p>
+<blockquote>
+	<table id="datatable">
+		<tr>
+			<th>限制条件</th>
+		</tr>
+		<tr>
+			<td>最低权限：部门主管</td>
+		</tr>
+		<tr>
+			<td>任何部门的根目录都无条件向所有用户共享，根目录权限无法被更改。</td>
+		</tr>
+		<tr>
+			<td>子目录权限受父目录制约，如父目录不允许A部门访问，则子目录无论怎样设置，A部门都无法访问。</td>
+		</tr>
+		<tr>
+			<td>系统管理员不受目录共享权限的制约，可以无条件地访问资料库中的任何目录。</td>
+		</tr>
+		<tr>
+			<td>用户对本部门目录的访问权限无法被禁止。</td>
+		</tr>
+		<tr>
+			<td>金都资料库不允许私人数据的存在，任何人都无法将某个目录设置为自己私人独享。</td>
+		</tr>
+	</table>
+</blockquote>
+<p> <b>操作方式：</b></p>
+<p>在要设置权限的目录上点击鼠标右键，在弹出菜单中选取“共享设置”：</p>
+<p><img border="1" src="Images/cat_share.png"></p>
+<p>此操作将调出“目录权限设置”界面，你可在列表中勾选允许访问此目录的部门，操作完成后按“确定”按钮。设置界面如下图所示：</p>
+<p><img border="0" src="Images/cat_share_list.gif"></p>
+
+
+<table id="separator"><tr><td><a href="#top">页顶</a> <a href="index.htm">总目录</a><hr noshade size="1"></td></tr></table>
+
+<!-- End of page contents -->
+</td></tr></table><!-- End of contents table -->
+</td></tr><!-- End of and row -->
+
+<!-- 3rd row page footer -->
+<tr><td id="footerline">版权所有(c) 2011 <a href="mailto:abinn32@yahoo.com">Abin</a> - <a href="http://www.jindu-wx.com/">无锡金都机械设备公司</a></td></tr>
+</table>
+
+</td><!-- Data column end -->
+<td><!-- Dummy right column --></td>
+</tr></table> <!-- End of master table -->
+
+</body>
+</html>
